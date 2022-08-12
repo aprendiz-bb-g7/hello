@@ -1,0 +1,30 @@
+
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile-foto {
+    margin-top: 12px;
+
+}
+
+.profile-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 2px;
+
+}
+
+img {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsl(187, 100%, 90%);
+    padding: 3px;
+
+}
