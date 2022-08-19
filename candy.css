@@ -1,0 +1,392 @@
+/*h1 {
+ color:rgb(153, 28, 28);
+}
+img{
+    border-radius: 100%;
+    opacity: 0.5;
+}
+img:hover{
+    opacity: 1.0;
+}
+
+rgb(252, 25, 93)
+rgb(255, 208, 53) amarelo
+rgb(189, 213, 214)
+antiquewhite*/
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    font-family: 'century gothic', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: rgb(255, 230, 175);
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'century gothic';
+    color: rgb(0, 0, 0);
+}
+
+/******* NAV CSS ********/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    background-color: rgb(255, 174, 0);
+    /*margin-left: 560px;*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(255, 230, 175);
+    border-radius: 10px;
+    color: rgb(54, 54, 54);
+}
+
+li a.active {
+    color: rgb(255, 230, 175);
+    background-color: rgb(85, 83, 83);
+    border-radius: 10px;
+
+  }
+
+/********* HEAD *****/
+.head {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 174, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+/*.h-text {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 340px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 50px;
+    width: 200px;
+    /*position: relative;
+    left: 1190px;
+}*/
+
+/**********************/
+
+.tronco {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    flex: 8;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+
+.friends {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+/********** FOOTER ***********/
+footer {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 174, 0);
+    margin-top: 70px;
+    height: 100px;
+    width: 100%;
+}
+
+.p-texto {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/**** TABLET ****/
+@media screen and (min-width: 700px) {
+    .content-left {
+        flex-direction: row;
+    }
+
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/**** COMPUTADOR ****/
+@media screen and (min-width: 1000px) {
+    .tronco {
+        flex-direction: row;
+    }
+
+    .tronco {
+        max-width: 929px;
+    }
+
+    /*.head {
+        margin-left: -321px;
+        margin-right: -321px;
+    }
+
+    footer {
+        margin-left: -321px;
+        margin-right: -321px;
+    }*/
+}
+
+@media screen and (min-width: 1800px){
+    /*ul{
+        margin-left: 710px;
+    }
+
+    /*.head {
+        margin-left: -480px;
+        margin-right: -480px;
+    }
+
+    footer {
+        margin-left: -480px;
+        margin-right: -480px;
+    }*/
+}
+
+/*************** CSS DOS TEXTOS *********************/
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    color: rgb(85, 83, 83);
+    border-left: 3px solid;
+    border-color: rgb(255, 174, 0);
+    background-color: white;
+    margin: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(241, 188, 74, 0.521);
+}
+
+.text-title {
+    display: flex;
+    font-size: 18px;
+    color: rgb(255, 174, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 18px;
+    margin-bottom: 16px;
+}
+
+.text-description {
+    display: flex;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 18px;
+}
+
+/************** CSS DO PROFILE ************/
+
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    /*border-style: solid;
+    border-width: 1px;*/
+    border-left: 3px solid;
+    border-color: rgba(255, 174, 0);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+    color: rgb(122, 122, 122);
+    background-color: white;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.profile-name {
+    display: flex;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.profile-status {
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(179, 177, 177);
+    margin-bottom: 15px;
+}
+
+.foto {
+    width: 40%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 2px;
+    border-color: rgb(255, 174, 0);
+}
+
+/************** CSS DO FRIENDS ************/
+.amg-box {
+    display: flex;
+    flex-direction: column;
+    /*border-style: solid;
+    border-width: 3px;*/
+    border-left: 3px solid;
+    border-color: rgb(255, 174, 0);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+    background-color: white;
+}
+
+.amg-title {
+    display: flex;
+    margin-top: 13px;
+    font-size: 37px;
+    font-weight: bold;
+    color: rgb(122, 122, 122)
+}
+
+.amg-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-color: rgb(255, 174, 0) rgba(255, 174, 0, 0);
+    scrollbar-width: thin;
+    margin-bottom: 15px;
+    padding-bottom: 23px;
+
+}
+
+.amgs-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    
+}
+
+.amg-profile {
+    display: flex;
+}
+
+.amg-link {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 174, 0);
+    margin-bottom: 8px;
+    font-family: 'century gothic', Courier New, Courier, monospace;
+    font-size: 20px;
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
+    box-shadow: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.amg-link:hover{
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.342);
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    color: rgb(255, 230, 175);
+}
+
+.amg-link1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(83, 83, 83);
+    margin-bottom: 8px;
+    font-family: 'century gothic', Courier New, Courier, monospace;
+    font-size: 20px;
+    color: rgb(255, 230, 175);
+    text-transform: uppercase;
+    box-shadow: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.amg-link1:hover{
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.342);
+    background-color: rgb(255, 174, 0);
+    border-radius: 10px;
+    color: rgb(54, 54, 54);
+}
+
+.amg-inframe {
+    height: 180px;
+    width: 140px;
+    filter: saturate(0);
+}
+
+.amg-inframe:hover {
+    filter: saturate(1);
+}
+a {
+    text-decoration: none;
+}
